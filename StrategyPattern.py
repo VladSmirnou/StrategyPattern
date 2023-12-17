@@ -15,8 +15,8 @@ class LoanCalculator:
         # algorithm.
         self.__loan_calculator.calculate_loan()
 
-    def set_loan_calculator(self, car_factory: 'CalculatorAlgorithm') -> None:
-        self.__loan_calculator = car_factory
+    def set_loan_calculator(self, calculator: 'CalculatorAlgorithm') -> None:
+        self.__loan_calculator = calculator
 
     loan_calculator: property = property(fset=set_loan_calculator)
 
